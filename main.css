@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+}
+
+#header{
+    /* position of the header */
+    position:sticky;
+    top: 0px;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex: 0 1 0;
+    justify-content: space-around;
+    /* look of the header */
+    height: 8vh;
+    background-image: linear-gradient(black,rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0.0));
+    transition: 1s;
+    z-index: 1;
+
+}
+
+#header-content{
+    display: flex;
+    flex: 0 1 auto;
+    gap: 12px;
+    justify-content: left;
+    align-items: center;
+    width:500px;
+}
+.header-text{
+    text-decoration: none;
+    color:whitesmoke;
+    flex: 0 1 0;
+}
+#title-logo{
+    font-size:32px;
+    font-weight: bold;
+}
+
+#projects{
+    font-size:30px;
+    font-weight: bold;
+    border:none;
+    flex: 0 2 0;
+    background-color: rgb(0, 0, 0, 0);
+    border-radius: 50%;
+    transition: transform .5s ease-in-out;
+}
+#projects:hover {
+    transform: rotate(360deg);
+    
+}
+#social-links{
+    display: flex;
+    flex: 0 2 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    width:250px;
+}
+
+.social-logo{
+    display: inline-block;
+    border-radius: 50%;
+    transition: transform .5s ease-in-out;
+}
+.social-logo:hover{
+    transform: rotate(360deg) scale(1.2);;
+}
+
+
+/*everything past here is the header dropdown menu */
+#header-dropdown{
+    position:fixed;
+    width:100%;
+    top: 8vh;
+    background-color:rgb(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 0;
+    transition: 1s;
+    z-index: 1;
+    
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.dropdown-text{
+    
+    line-height: 220%;
+    text-align: center;
+    height:100%;
+    width: 33.3%;
+    text-decoration: none;
+    color:whitesmoke;
+    transition:0.4s;
+    z-index: 1;
+   
+}
+#rps{
+    border-bottom-left-radius: 25%;
+}
+#cal{
+    border-bottom-right-radius: 25%;
+}
+
+.dropdown-text:hover{
+    background-color: black;
+}
