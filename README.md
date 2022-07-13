@@ -2,5 +2,5 @@
 Public repository of my personal website
 
 Working on:
-    Etch-a-Sketch
+    Layout and formats
 v. 0.3
