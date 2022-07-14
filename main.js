@@ -53,6 +53,7 @@ container.insertBefore(header,container.firstChild);
         const projectsTab = document.createElement('button');
         projectsTab.classList.add('header-text');
         projectsTab.setAttribute('id','projects');
+        projectsTab.setAttribute('type', 'button');
         projectsTab.textContent = '+';
         headerContent.appendChild(projectsTab);
         let projectsTabOorC = 0;
@@ -89,6 +90,7 @@ container.insertBefore(header,container.firstChild);
         const gitHub = document.createElement('a');
         gitHub.classList.add('social-logo');
         gitHub.href = 'https://github.com/nneddk';
+        gitHub.setAttribute("target", "__blank")
         socialLinks.appendChild(gitHub);
             const gitHubImage = document.createElement('img');
             gitHubImage.src = './images/main/GitHub-Mark-Light-64px.png'
@@ -99,6 +101,7 @@ container.insertBefore(header,container.firstChild);
         const discord= document.createElement('a');
         discord.classList.add('social-logo');
         discord.href = 'https://discordapp.com/users/169671481221971968';
+        discord.setAttribute("target", "__blank")
         socialLinks.appendChild(discord);
             const discordImage = document.createElement('img');
             discordImage.src = './images/main/Discord-Logo-White.png'
