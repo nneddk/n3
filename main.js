@@ -1,6 +1,18 @@
 document.ondragstart = function() { return false; };
 const container = document.querySelector('body');
 
+function getRandom() {
+    return Math.floor(Math.random() * 255) + 1;
+  }
+function getColor() {
+    container.style.backgroundImage = 'linear-gradient(rgb('
+            +getRandom()+','+getRandom()+','+getRandom()+'),rgb('+getRandom()+','+getRandom()+','+getRandom()+'))';
+}
+
+
+getColor();
+
+
 /*header dropdown have to position this way, dont ask.*/
 const headerDropdown = document.createElement('div');
 headerDropdown.setAttribute('id','header-dropdown');
@@ -42,12 +54,14 @@ container.insertBefore(header,container.firstChild);
     header.appendChild(headerContent);
 
         /*n3 logo*/
-        const titleLogo = document.createElement('a');
+        const titleLogo = document.createElement('button');
         titleLogo.classList.add('header-text');
         titleLogo.setAttribute('id','title-logo');
-        titleLogo.href = './index.html';
         titleLogo.textContent = '[n3]';
         headerContent.appendChild(titleLogo);
+        titleLogo.onclick = function(){
+            getColor();
+        }
         /*projects tab*/
     
         const projectsTab = document.createElement('button');
@@ -63,7 +77,6 @@ container.insertBefore(header,container.firstChild);
                 document.getElementById('header-dropdown').style.height = '4vh';
                 projectsTabOorC = 1;
                 projectsTab.textContent = 'X';
-                document.getElementById('header').style.backgroundImage = 'linear-gradient(to bottom right, black,rgb(0, 0, 0, 0.2),rgb(0, 0, 0, 0.2))';
                 document.getElementById('header').style.backgroundColor = 'transparent';
             }else if(projectsTabOorC === 1){
                 document.getElementById('header-dropdown').style.height = '0vh';
@@ -112,9 +125,16 @@ container.insertBefore(header,container.firstChild);
 /* footer */
         const footer =  document.createElement('div');
         footer.setAttribute('id', 'footer');
-        footer.textContent = "@nneddk o7";
         container.appendChild(footer);
+
+        const footerLink = document.createElement('a');
+        footerLink.setAttribute('id', 'footerLink');
+        footerLink.textContent = '< back to home o7';
+        footerLink.href = './index.html';
+        footer.appendChild(footerLink);
+        
     
+
 
     
 

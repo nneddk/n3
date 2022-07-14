@@ -1,43 +1,52 @@
-body{
-    background-color: grey;
-}
-
 #main-page{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height:80vh;
-    padding-bottom: 160px;
+    padding-bottom: 18vh;
 }
-#main-page *{
-    border: solid;
+
+#time-box{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
 }
 
 #time-slot{
-    font-family: Monoton, cursive, 'Roboto Condensed';
+    position: sticky;
+    font-family: Monoton,'Roboto Condensed', cursive;
     color:whitesmoke;
     font-size: 220px;
-    flex: 0 0 0;
+    flex: 1 1 auto;
     transition: all 1s;
-    position:absolute;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none;
 }
+#am-or-pm{
+    font-family: Monoton,'Roboto Condensed', cursive;
+    flex: 1 1 auto;
+    color:whitesmoke;
+    font-size: 60px;
+}
 #search-bar-hider{
-    position:relative;
- 
+    border:none;
+
+    position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
     width: 40%;
-    height: 5%;
+    height: 40px;
     transition: all 0.5s ease-in-out;
     background-color: transparent;
 }
 
 #search-bar-hider-button{
+    position: relative;
     font-family: sans-serif;
     border-radius: 50%;
     width:42px;
@@ -55,7 +64,7 @@ body{
 }
 #search-bar-outline{
     position: relative;
-    margin-top: 320px;
+
     overflow: hidden;
     display:flex;
     justify-content: center;
@@ -64,7 +73,7 @@ body{
     border-radius: 9999px;
     background-color: rgb(0,0,0, 0.2);
     width: 40%;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 #search-bar{
     background-color: transparent;
@@ -80,6 +89,7 @@ body{
 
 .search-bar-buttons{
     border:none;
+    border:none;
     background-color: transparent;
     font-size: 18px;
     font-weight: bold;
@@ -94,4 +104,33 @@ body{
 }
 #search-bar-search:hover{
     margin-right: -5px;
+}
+
+#quote-bar{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    justify-content: center;
+    align-items:center;
+    width: 80%;
+    height: 190px;
+    transition: 1.3s;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+#quote{
+    font-family:'Edu NSW ACT Foundation', cursive;
+    color:whitesmoke;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 48px;
+    width: 80%;
+    transition: all 1.5s ease-out;
+}
+#author{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    color:whitesmoke;
+    font-size: 24px;
+    transition: all 1.5s ease-out;
 }
