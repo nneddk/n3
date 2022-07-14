@@ -5,6 +5,7 @@ function startTime() {
     let today = new Date(), h = today.getHours(), m = today.getMinutes();
     let ampm = h > 12 ? 'pm': 'am';
     h = h % 12;
+    h = h ? h: h = 12;
     h = checkTime(h);
     m = checkTime(m);
     document.getElementById('time-slot').textContent = h + ':' + m;
