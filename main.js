@@ -129,7 +129,7 @@ container.insertBefore(header,container.firstChild);
 
         const footerLink = document.createElement('a');
         footerLink.setAttribute('id', 'footerLink');
-        footerLink.textContent = '< back to home o7';
+        footerLink.textContent = '< o7';
         footerLink.href = './index.html';
         footer.appendChild(footerLink);
         

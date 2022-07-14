@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400&family=Monoton&family=Roboto+Condensed:wght@700&display=swap');
+html{
+    width: 100%;
+}
 body{
+    min-width: 100%;
     margin: 0px;
     font-family: 'Roboto Condensed', sans-serif;
     background-image: linear-gradient(rgb(139, 87, 87), grey);
