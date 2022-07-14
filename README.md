@@ -2,5 +2,5 @@
 Public repository of my personal website
 
 Working on:
-    Layout and formats
+    Pages.
 v. 0.3
