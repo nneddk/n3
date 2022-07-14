@@ -109,7 +109,7 @@ container.insertBefore(header,container.firstChild);
 /* footer */
         const footer =  document.createElement('div');
         footer.setAttribute('id', 'footer');
-        footer.textContent = "@nneddk :v";
+        footer.textContent = "@nneddk o7";
         container.appendChild(footer);
     
 
