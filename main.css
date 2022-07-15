@@ -17,6 +17,7 @@ body{
     justify-content: space-around;
     /* look of the header */
     height: 9vh;
+    width: 100vw;
     background-color: black;
     background-image: linear-gradient(to bottom right, black,rgb(0, 0, 0, 0.2),rgb(0, 0, 0, 0.2));
     transition: 0.5s ease-in-out;
