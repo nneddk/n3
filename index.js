@@ -45,9 +45,6 @@ searchField.addEventListener('keypress', function (e) {
         window.open(url, "_blank");
     }
 });
-
-
-
 // Powered by Quotable
 // https://github.com/lukePeavey/quotable
 document.addEventListener("DOMContentLoaded", () => {
