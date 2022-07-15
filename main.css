@@ -128,7 +128,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: black;
-    width: 100%;
+    width: 100vw;
     margin-bottom: 0;
     height: 3vh;
     
