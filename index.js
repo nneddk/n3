@@ -65,12 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
           console.log(data);
         }
       }
-    
       // Attach an event listener to the `button`
       quote.addEventListener("click", updateQuote);
       setInterval(updateQuote, 20000);
       // call updateQuote once when page loads
       updateQuote();
-      
     });
     
