@@ -19,7 +19,7 @@
     position: sticky;
     font-family: Monoton,'Roboto Condensed', cursive;
     color:whitesmoke;
-    font-size: 220px;
+    font-size: 25vmin;
     flex: 1 1 auto;
     transition: all 1s;
     -webkit-user-select: none; /* Safari */
@@ -30,17 +30,16 @@
     font-family: Monoton,'Roboto Condensed', cursive;
     flex: 1 1 auto;
     color:whitesmoke;
-    font-size: 60px;
+    font-size: 8vmin;
 }
 #search-bar-hider{
     border:none;
-
     position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 40px;
+    width: 100vw;
+    height: 8vh;
     transition: all 0.5s ease-in-out;
     background-color: transparent;
 }
@@ -64,43 +63,40 @@
 }
 #search-bar-outline{
     position: relative;
-
     overflow: hidden;
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 0px;
+    height: 0vh;
     border-radius: 9999px;
     background-color: rgb(0,0,0, 0.2);
-    width: 40%;
+    width: 40vw;
     transition: 0.3s ease-in-out;
 }
 #search-bar{
     background-color: transparent;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 18px;
-    height:90%;
-    width: 90%;
+    font-size: 3vmin;
+    height:100%;
+    width: 100%;
     overflow: hidden;
     border:none;
     outline: none;
     color:whitesmoke;
+    padding-left: 2vmin;
 }
 
 .search-bar-buttons{
     border:none;
     border:none;
     background-color: transparent;
-    font-size: 18px;
+    font-size: 3vmin;
     font-weight: bold;
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
     color:whitesmoke;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-#search-bar-clear:hover{
-    transform:rotate(360deg);
+    padding-left: 1vmin;
+    padding-right: 1vmin;
 }
 #search-bar-search:hover{
     margin-right: -5px;
@@ -124,13 +120,13 @@
     color:whitesmoke;
     text-align: center;
     flex-wrap: wrap;
-    font-size: 48px;
-    width: 80%;
+    font-size: 6vmin;
+    width: 60%;
     transition: all 1.5s ease-out;
 }
 #author{
     font-family: 'Edu NSW ACT Foundation', cursive;
     color:whitesmoke;
-    font-size: 24px;
+    font-size: 4vmin;
     transition: all 1.5s ease-out;
 }

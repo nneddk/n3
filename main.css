@@ -6,10 +6,6 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     background-image: linear-gradient(rgb(139, 87, 87), grey);
 }
-*{
-    border:solid
-}
-
 #header{
     /* position of the header */
     position:sticky;
@@ -27,7 +23,6 @@ body{
     z-index: 1;
 
 }
-
 #header-content{
     display: flex;
     flex: 0 1 auto;
@@ -56,8 +51,8 @@ body{
 #title-logo:hover{
     transform: scale(1.1);
 }
-
 #projects{
+    border:none;
     font-size: 4vmin;
     font-weight: bold;
     height: 6vmin;

@@ -18,17 +18,14 @@ const searchBarHider = document.getElementById('search-bar-hider');
 let searchBarHiderOoC = 0;
 searchBarHider.onclick = function(){
     if (searchBarHiderOoC === 0){
-        searchField.style.height = '32px';
+        searchField.style.height = '4vh';
         searchBarHiderOoC = 1;
     }else{
-        searchField.style.height = '0px';
+        searchField.style.height = '0vh';
         searchBarHiderOoC = 0;
     }
 }
-const searchButtonClear = document.getElementById('search-bar-clear');
-searchButtonClear.onclick = function(){
-    document.querySelector('#search-bar').value = ""
-}
+
 const searchButton = document.getElementById('search-bar-search');
 searchButton.onclick = function(){
     const searchText = document.querySelector('#search-bar').value;
