@@ -76,12 +76,10 @@ container.insertBefore(header,container.firstChild);
             if (projectsTabOorC === 0){
                 document.getElementById('header-dropdown').style.height = '4vh';
                 projectsTabOorC = 1;
-                projectsTab.textContent = 'X';
                 document.getElementById('header').style.backgroundColor = 'transparent';
             }else if(projectsTabOorC === 1){
                 document.getElementById('header-dropdown').style.height = '0vh';
                 projectsTabOorC = 0;
-                projectsTab.textContent = '+';
                 document.getElementById('header').style.backgroundColor = '';
             }
         }
@@ -108,7 +106,7 @@ container.insertBefore(header,container.firstChild);
             const gitHubImage = document.createElement('img');
             gitHubImage.src = './images/main/GitHub-Mark-Light-64px.png'
             gitHubImage.setAttribute('draggable',false);
-            gitHubImage.width = 32;
+            gitHubImage.width = 38;
             gitHub.appendChild(gitHubImage);
 
         const discord= document.createElement('a');
@@ -119,7 +117,7 @@ container.insertBefore(header,container.firstChild);
             const discordImage = document.createElement('img');
             discordImage.src = './images/main/Discord-Logo-White.png'
             discordImage.setAttribute('draggable', false);
-            discordImage.width = 32;
+            discordImage.width = 38;
             discord.appendChild(discordImage);
 
 /* footer */
