@@ -16,7 +16,7 @@ body{
     flex: 0 1 0;
     justify-content: space-around;
     /* look of the header */
-    height: 9vh;
+    height: 9.05vh;
     width: 100vw;
     background-color: black;
     background-image: linear-gradient(to bottom right, black,rgb(0, 0, 0, 0.2),rgb(0, 0, 0, 0.2));
@@ -106,7 +106,7 @@ body{
 
 .dropdown-text{
     text-align: center;
-    font-size: 2vmin;
+    font-size: 3vmin;
     height:100%;
     width: 33.3%;
     text-decoration: none;
@@ -129,8 +129,7 @@ body{
     align-items: center;
     background-color: black;
     width: 100vw;
-    margin-bottom: 0;
-    height: 3vh;
+    height: 4vh;
     
 }
 #footerLink{
@@ -141,7 +140,6 @@ body{
     color:whitesmoke;
     background-color: transparent;
     transition:0.5s ease-in-out ;
-    width: 100%;
 }
 #footerLink:hover{
     margin-left: -20px;

@@ -13,6 +13,8 @@
     justify-content: center;
     align-items: center;
     gap:8px;
+    width: 80vw;
+
 }
 
 #time-slot{
@@ -20,7 +22,7 @@
     font-family: Monoton,'Roboto Condensed', cursive;
     color:whitesmoke;
     font-size: 25vmin;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     transition: all 1s;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -28,7 +30,7 @@
 }
 #am-or-pm{
     font-family: Monoton,'Roboto Condensed', cursive;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     color:whitesmoke;
     font-size: 8vmin;
 }
@@ -70,7 +72,7 @@
     height: 0vh;
     border-radius: 9999px;
     background-color: rgb(0,0,0, 0.2);
-    width: 40vw;
+    width: 50vw;
     transition: 0.3s ease-in-out;
 }
 #search-bar{
@@ -108,8 +110,9 @@
     flex: 0 1 auto;
     justify-content: center;
     align-items:center;
-    width: 80%;
-    height: 190px;
+    width: 80vw;
+    height: 26vh;
+    gap: 1vh;
     transition: 1.3s;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -120,13 +123,13 @@
     color:whitesmoke;
     text-align: center;
     flex-wrap: wrap;
-    font-size: 6vmin;
-    width: 60%;
+    font-size: 5vmin;
+    width: 78vw;
     transition: all 1.5s ease-out;
 }
 #author{
     font-family: 'Edu NSW ACT Foundation', cursive;
     color:whitesmoke;
-    font-size: 4vmin;
+    font-size: 3vmin;
     transition: all 1.5s ease-out;
 }
