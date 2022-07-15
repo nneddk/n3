@@ -16,7 +16,7 @@ body{
     flex: 0 1 0;
     justify-content: space-around;
     /* look of the header */
-    height: 9.05vh;
+    height: 100px;
     width: 100vw;
     background-color: black;
     background-image: linear-gradient(to bottom right, black,rgb(0, 0, 0, 0.2),rgb(0, 0, 0, 0.2));
@@ -92,7 +92,7 @@ body{
 #header-dropdown{
     position:fixed;
     width:100%;
-    top: 9vh;
+    top: 100px;
     background-color:rgb(0, 0, 0, 0.2);
     display: flex;
     overflow: hidden;
