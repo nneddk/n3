@@ -2,5 +2,5 @@
 Public repository of my personal website
 
 Working on:
-    rps v2
+    etch v2
 
