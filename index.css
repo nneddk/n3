@@ -6,7 +6,6 @@
     height:80vh;
     padding-bottom: 18vh;
 }
-
 #time-box{
     display:flex;
     flex-direction: row;
@@ -16,7 +15,6 @@
     width: 80vw;
 
 }
-
 #time-slot{
     position: sticky;
     font-family: Monoton,'Roboto Condensed', cursive;
@@ -45,7 +43,6 @@
     transition: all 0.5s ease-in-out;
     background-color: transparent;
 }
-
 #search-bar-hider-button{
     position: relative;
     font-family: sans-serif;
@@ -87,7 +84,6 @@
     color:whitesmoke;
     padding-left: 2vmin;
 }
-
 .search-bar-buttons{
     border:none;
     border:none;
@@ -103,7 +99,6 @@
 #search-bar-search:hover{
     margin-right: -5px;
 }
-
 #quote-bar{
     display: flex;
     flex-direction: column;

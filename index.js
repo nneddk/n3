@@ -1,3 +1,4 @@
+//see what time is it
 function checkTime(i) {
     return (i < 10) ? '0' + i : i;
 }
@@ -13,28 +14,28 @@ function startTime() {
     setTimeout(startTime, 1000);
 }
 startTime();
+//open search bar
 const searchField = document.getElementById('search-bar-outline');
 const searchBarHider = document.getElementById('search-bar-hider');
 let searchBarHiderOoC = 0;
 searchBarHider.onclick = function(){
     if (searchBarHiderOoC === 0){
-        searchField.style.height = '4vh';
+        searchField.style.height = '55px';
         searchBarHiderOoC = 1;
     }else{
         searchField.style.height = '0vh';
         searchBarHiderOoC = 0;
     }
 }
-
+//search
 const searchButton = document.getElementById('search-bar-search');
 searchButton.onclick = function(){
     const searchText = document.querySelector('#search-bar').value;
     let param = encodeURI(searchText);
     let url ="https://www.google.com/search?q="+param;
     window.open(url, "_blank");
-    
 }
-
+// search when enter key is pressed
 searchField.addEventListener('keypress', function (e) {
     if (e.key === 'Enter' && searchBarHiderOoC === 1) {
         const searchText = document.querySelector('#search-bar').value;
@@ -68,4 +69,4 @@ document.addEventListener("DOMContentLoaded", () => {
       // call updateQuote once when page loads
       updateQuote();
     });
-    
+
