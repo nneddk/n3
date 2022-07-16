@@ -1,0 +1,168 @@
+#main-page{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 81vh;
+    padding-bottom: 20vh;  
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */ 
+}
+#new-game{
+    overflow: hidden;
+    top:20vh;
+    display:flex;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 60vw;
+    flex: 0 1 auto;
+    transition: all 0.5s ease-in-out;
+}
+#new-game-container{
+    display:flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height:50vh;
+    border-radius: 25px;
+    background-color: rgb(0,0,0,0.2);
+    gap:18px;
+}
+#result{
+    color:whitesmoke;
+    text-align: center;
+    height: 0;
+    width: 80%;
+    font-size: 8vmin;
+    overflow:hidden;
+    transition: all 0.5s ease-in-out;
+}
+#goal{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 8vmin;
+    height:10vh;
+    width:70%;
+    font-size: 5vmin;
+}
+#goal-score{
+    border:none;
+    color:whitesmoke;
+    background-color: rgb(0,0,0,0.2);
+    text-align: center;
+    border-radius: 25px;
+    width: 60px;
+    height:60px;
+    font-size: 5vmin;
+}
+#play-again-button{
+    color:whitesmoke;
+    background-color: rgb(0,0,0,0.2);
+    border:none;
+    height: 60px;
+    width: 180px;
+    border-radius: 9999px;
+    font-size: 3vmin;
+    transition: all 0.5s ease-in-out;
+}
+#play-again-button:hover{
+    transform: scale(1.1);
+}
+/* game board */
+#game-board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 60%;
+    gap: 12px;
+}
+#score-board{
+    color:whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 10vh;
+}
+.score{
+    text-align: center;
+    font-size: 6vmin;
+}
+#match-result{
+    width: 20%;
+    font-size: 4vmin;
+    text-align: center;
+}
+
+#player-vs-computer{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+}
+.choice-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+}
+
+
+#player-picture:hover{
+    transform: rotate(90deg);
+}
+#opponent-picture:hover{
+    transform: rotate(-90deg);
+}
+
+#player-choice{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:12px;
+    width: 100%;
+    height: 10vh;
+}
+
+.player-choice-button{
+    border:none;
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
+    background-color: transparent;
+}
+#rock{
+    background: url(./images/rk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+#paper{
+    background: url(./images/pp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+#scissors{
+    background: url(./images/sc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+}
+
+.player-choice-button:hover{
+    transform: rotate(90deg);
+}
