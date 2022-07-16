@@ -77,13 +77,13 @@ body{
     user-select: none; /* Standard syntax */
 }
 #discord-image{
-    background: url(../../images/main/Discord-Logo-White.png);
+    background: url(./images/Discord-Logo-White.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
 }
 #github-image{
-    background: url(../../images/main/GitHub-Mark-Light-64px.png);
+    background: url(./images/GitHub-Mark-Light-64px.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
