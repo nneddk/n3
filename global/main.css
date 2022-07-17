@@ -61,8 +61,11 @@ body{
     transform: scale(1.1);
 }
 #projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border:none;
-    font-size: 2vmin;
+    font-size: 4vmin;
     font-weight: bold;
     height: 30px;
     width: 30px;
