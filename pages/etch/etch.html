@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset = 'UTF-8'>
+        <link rel = 'stylesheet' href = '../../global/main.css'>
+        <script src = '../../global/mainPages.js' defer></script>
+        <link rel = 'stylesheet' href = './etch.css'>
+        <script src = './etch.js' defer></script>
+        <title>etch</title>
+        <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    </head>
+    <body>
+        <div id = 'main-page'>
+            <div id = 'tool-bar'>
+                <span id = 'color-picker-screen'><input type ='color' id = 'color-picker' value='#000000'> </span>    
+                <button type = 'button' id = 'new-board' class = 'toolbar-button'>new</button>
+                <button type = 'button' id = 'eraser' class = 'toolbar-button tgl'>erase</button>
+                <button type = 'button' id = 'rainbow-mode' class = 'toolbar-button tgl'>rainbow</button>
+            </div>
+            <div id = 'drawing-space-holder'>
+                <div id = 'drawing-space'>
+
+                </div>
+            </div>
+            <div id = 'board-size-holder'>
+                <input type='range' min='1' max='64' value='10' id='board-size'>
+                <span id = 'current-size'>10 x 10</span>
+            </div>
+        </div>
+    </body>
+</html>
