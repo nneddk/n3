@@ -60,7 +60,7 @@
     width: 70vmin;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    background-color: whitesmoke;
+    background-color: white;
     
 }
 
