@@ -37,7 +37,6 @@ body{
 #header-content{
     display: flex;
     flex: 0 1 auto;
-    gap: 2vw;
     justify-content: left;
     align-items: center;
     width:500px;
