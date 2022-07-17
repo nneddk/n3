@@ -2,8 +2,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 81vh;
-    padding-bottom: 20vh;  
+    height: 100vh;  
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */ 
