@@ -1,8 +1,9 @@
 #main-page{
     display:flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 91vh;
  
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
