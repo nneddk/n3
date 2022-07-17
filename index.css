@@ -117,7 +117,7 @@
     color:whitesmoke;
     text-align: center;
     flex-wrap: wrap;
-    font-size: 5vmin;
+    font-size: 6vmin;
     width: 78vw;
     transition: all 1.5s ease-out;
 }

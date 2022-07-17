@@ -25,7 +25,7 @@ container.insertBefore(headerDropdown,container.firstChild);
     const etchLink = document.createElement('a');
     etchLink.classList.add('dropdown-text');
     etchLink.setAttribute('id','etch');
-    etchLink.href = '#';
+    etchLink.href = './pages/etch/etch.html';
     etchLink.textContent= 'etch';
     headerDropdown.appendChild(etchLink);
     /* calculator */
