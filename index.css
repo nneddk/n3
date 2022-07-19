@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     height:91vh;
+    width:100%;
 }
 #time-box{
     display:flex;
@@ -118,7 +119,7 @@
     text-align: center;
     flex-wrap: wrap;
     font-size: 6vmin;
-    width: 78vw;
+    width: 60vw;
     transition: all 1.5s ease-out;
 }
 #author{

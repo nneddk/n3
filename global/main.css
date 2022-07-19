@@ -3,9 +3,11 @@
 body{
     margin: 0px;
     font-family: 'Roboto Condensed', sans-serif;
-    background-image: linear-gradient(rgb(139, 87, 87), grey);
+    background-color: linear-gradient(rgb(139, 87, 87), grey);
+    
 }
 #page-name{
+    background: url(./images/bg.png);
     display:flex;
     justify-content: center;
     align-items: center;

@@ -6,7 +6,7 @@ function getRandom() {
   }
 function getColor() {
     container.style.backgroundImage = 'linear-gradient(rgb('
-            +getRandom()+','+getRandom()+','+getRandom()+'),rgb('+getRandom()+','+getRandom()+','+getRandom()+'))';
+            +getRandom()+','+getRandom()+','+getRandom()+'),rgb('+(getRandom()-100)+','+(getRandom()-100)+','+(getRandom()-100)+'))';
 }
 getColor();
 /*header dropdown have to position this way, dont ask.*/
@@ -31,8 +31,8 @@ container.insertBefore(headerDropdown,container.firstChild);
     /* calculator */
     const calLink = document.createElement('a');
     calLink.classList.add('dropdown-text');
-    calLink.setAttribute('id','cal');
-    calLink.href = '#';
+    calLink.setAttribute('id','calc');
+    calLink.href = './pages/calc/calc.html';
     calLink.textContent= 'calc';
     headerDropdown.appendChild(calLink);
 /* header creation */
