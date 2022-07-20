@@ -60,16 +60,6 @@ eightButton.onclick = function(){
 nineButton.onclick = function(){
     setter(9);
 }
-
-function setter(num){
-    if (eqCheck == 1){
-        numberDisplay.textContent = '';
-        eqCheck = 0;
-    }
-    if(numberDisplay.textContent.length <= 23){
-        numberDisplay.textContent = numberDisplay.textContent + num;
-    }
-}
 moduloButton.onclick = function(){
     operatorSetter('%');
 }
@@ -87,7 +77,40 @@ divideButton.onclick = function(){
 }
 let operator = '';
 let eqCheck = 0;
+
 equalButton.onclick = function(){
+    equals();
+}
+clearButton.onclick = function(){
+    clear();
+}
+eraseButton.onclick = function(){
+    erase();
+}
+/* keyboard support */
+
+document.addEventListener('keypress', function (e) {
+    if (!isNaN(e.key)) {
+        setter(e.key);
+    }
+    if (e.key == '+'||e.key == '-'||e.key == 'x'||e.key == '*'||e.key == '/'||e.key == '%'){
+        operatorSetter(e.key);
+    }
+    if(e.key === 'Enter'||e.key === 'Space'||e.key === '='){
+        equals();
+    }
+});
+/* functions */
+function setter(num){
+    if (eqCheck == 1){
+        numberDisplay.textContent = '';
+        eqCheck = 0;
+    }
+    if(numberDisplay.textContent.length <= 18){
+        numberDisplay.textContent = numberDisplay.textContent + num;
+    }
+}
+function equals(){
     numberDisplay.textContent = equate(Number(containerDisplay.textContent), Number(numberDisplay.textContent));
     operatorDisplay.textContent = '';
     containerDisplay.textContent = '';
@@ -100,19 +123,17 @@ function operatorSetter(op){
     numberDisplay.textContent = '';
     operator = op;
 }
-
-clearButton.onclick = function(){
+function clear(){
     numberDisplay.textContent = '';
     operatorDisplay.textContent = '';
     containerDisplay.textContent = '';
     operator = '';
 }
-
-eraseButton.onclick = function(){
+function erase(){
     numberDisplay.textContent = numberDisplay.textContent.slice(0, -1);
 }
-
 function equate(num1, num2){
+         
     switch (operator){
         case '+':
             return (num1+num2).toFixed(2);
@@ -120,13 +141,15 @@ function equate(num1, num2){
             return (num1-num2).toFixed(2);
         case 'x':
             return (num1*num2).toFixed(2);
+        case '*':
+            return (num1*num2).toFixed(2);
         case '/':
             return (num1/num2).toFixed(2);
         case '%':
             return (num1%num2).toFixed(2);
         default:
-            return num2;
-            
+            return num2;   
     }
 
 }
+
