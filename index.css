@@ -5,6 +5,10 @@
     flex-direction: column;
     height:91vh;
     width:100%;
+    background: url(./global/images/bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 #time-box{
     display:flex;

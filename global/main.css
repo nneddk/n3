@@ -7,7 +7,6 @@ body{
     
 }
 #page-name{
-    background: url(./images/bg.png);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -94,13 +93,13 @@ body{
     background: url(./images/Discord-Logo-White.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90%;
+    background-size: 80%;
 }
 #github-image{
     background: url(./images/GitHub-Mark-Light-64px.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90%;
+    background-size: 80%;
 }
 
 .social-logo{

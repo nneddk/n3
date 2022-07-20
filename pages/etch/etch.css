@@ -11,7 +11,7 @@
     background: url(../../global/images/bg.png);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 130%;
+    background-size: 100%;
 }
 #tool-bar{
     display:flex;
